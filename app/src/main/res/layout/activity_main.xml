@@ -5,21 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center">
 
-    <ImageButton
+        <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+            android:src="@drawable/coffee"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10sp"
+        android:text="아이디"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="이메일 형식으로 입력"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10sp"
+        android:text="비밀번호"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="로그인""/>
+
     <EditText
         android:id="@+id/contentEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="내용 입력"/>
+        android:text="내용 입력"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/eventBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="이벤트 확인"/>
+        android:text="이벤트 확인"
+        android:visibility="gone"/>
 
 </LinearLayout>
